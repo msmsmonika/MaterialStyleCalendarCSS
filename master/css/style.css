@@ -32,7 +32,7 @@
 }
 
     .ui-datepicker .ui-datepicker-header {
-        padding: 3% 0;
+        padding: 4% 0;
         border: none;
         border-radius: 0;
         background-color: #F44336;
@@ -45,7 +45,7 @@
         text-align: center;
         font-weight: bold;
         border: 0;
-        padding: 5%;
+        padding: 4%;
     }
 
 .ui-datepicker-calendar > tbody > tr > td > a.ui-state-default {
