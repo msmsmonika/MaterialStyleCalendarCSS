@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css" />
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <title>Material Calendar</title>
+    <link href="css/jquery-ui.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!--<link href="css/bootstrap-material-design.css" rel="stylesheet" />-->
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--<script src="js/material.min.js"></script>-->
+    <!--<script>
+        $(document).ready(function () {
+            $.material.options.autofill = true;
+            $.material.init();
+        });
+    </script>-->
+    <style>
+        body {
+            background: rgb(238, 238, 238);
+        }
+        .navbar.navbar-inverse {
+            background: #58585A;
+        }
+
+        .nav > li > a {
+            font-size: 1.2em !important;
+        }
+        .navbar-inverse .navbar-brand {
+            color: white;
+            font-size:1.4em;
+        }
+        .navbar {
+            border-radius: 0px;
+        }
+        /*Datepicker css*/
+        .ui-widget.ui-widget-content {
+            border: none;
+            border-radius: 0;
+            padding: 0;
+        }
+
+        .ui-datepicker {
+            width: 100% !important;
+            padding: .2em .2em 0;
+            display: none;
+        }
+
+            .ui-datepicker .ui-datepicker-header {
+                padding: 3% 0;
+                border: none;
+                border-radius: 0;
+                background-color: #F44336;
+                color: white;
+                font-weight: normal;
+                box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            }
+
+            .ui-datepicker th {
+                text-align: center;
+                font-weight: bold;
+                border: 0;
+                padding: 5%;
+            }
+
+        .ui-datepicker-calendar > tbody > tr > td > a.ui-state-default {
+            border: none !important;
+            background: white !important;
+            font-weight: normal !important;
+            color: #454545 !important;
+            background: white !important;
+            border: none !important;
+            text-align: center !important;
+            padding: 30% !important;
+        }
+
+        .ui-datepicker-calendar > tbody > tr > td > a.ui-state-active {
+            border: none !important;
+            background: #448AFF !important;
+            color: white !important;
+            border-radius: 100% !important;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        Material Style Calendar
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-10 col-md-10 col-lg-4 col-sm-offset-1 col-md-offset-1 col-lg-offset-4 text-center">
+
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div id="datetimepicker12"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </form>
+    <script src="js/main.js"></script>
+</body>
+</html>
